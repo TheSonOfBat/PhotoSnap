@@ -189,6 +189,12 @@ section:nth-child(1){
 .content--h1{
     margin: 0px;
     font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 6px;
+}
+
+.content--paragraph{
+    line-height: 25px;
 }
 
 .image--content{
