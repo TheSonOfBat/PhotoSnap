@@ -159,13 +159,36 @@ nav{
 
 section{
     display: grid;
-    grid-template-columns: clamp(495px, 50vw, 610px) 1fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 650px;
     width: 100%;
+    color: black;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+section:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+.sectionLeft{
+    grid-template-columns: clamp(495px, 50vw, 610px) 1fr;
+}
+
+.sectionRight{
+    grid-template-columns: 1fr clamp(495px, 50vw, 610px);
 }
 
 .text--content{
     padding: 30px;
+    align-items: center;
+    width: max(80%, 387px);
+}
+
+.content--h1{
+    margin: 0px;
+    font-size: 40px;
 }
 
 .image--content{
