@@ -160,29 +160,29 @@ nav{
 /*Herosection*/
 .herosection{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: minmax(495px, 0.8fr) minmax(400px, 1fr);
     grid-template-rows: 750px;
 }
 
-.herosection--LHS{
+.row--LHS{
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 110px 0px 110px;
+    padding: 0px clamp(30px, 5vw, 100px) 0px clamp(30px, 5vw, 100px);
 }
 
-.herosection--LHS>h1{
-    font-size: 50px;
+.row--LHS>h1{
+    font-size: clamp(30px, 5vw, 60px);
     letter-spacing: 6.5px;
     font-weight: 500;
     line-height: 65px;
     margin: 0px;
 }
 
-.herosection--LHS>p{
-    font-size: 17px;
+.row--LHS>p{
+    font-size: clamp(15px, 1vw, 18px);
     color: #999999;
     width: 500px;
     line-height: 25px;
@@ -207,19 +207,25 @@ nav{
     transition: transform 0.3s ease;
 }
 
-.herosection--RHS{
+.row--RHS{
     width: 100%;
     background-image: url("images/home/desktop/create-and-share.jpg");
     background-size: cover;
+    background-position: 50%;
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 850px) {
     /*Mobile*/
     .default {
       display: none;
     }
     .mobile, .mobileNav{
         display: flex;
+    }
+
+    .herosection{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
   }
