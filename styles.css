@@ -15,6 +15,10 @@ html, body{
     margin: 0px;
 }
 
+a{
+    all: unset;
+}
+
 /*Nav Styles*/
 nav{
     width: 100%;
@@ -110,13 +114,56 @@ nav{
     top: 50%;
 }
 
+.mobile{
+    display: none;
+}
+
+.mobileNav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.5s ease;
+    font-weight: bold;
+}
+
+.mobileNavActive{
+    max-height: 100vh;
+}
+
+.separator{
+    width: min(310px, 80%);
+    background-color: #979797;
+    height: 1px;
+    border-radius: 3px;
+}
+
+.mobileNav:nth-child(2)>div>a>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobileNav> button{
+    padding: 14px 68px 14px 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
 /*Media Queries*/
 @media only screen and (max-width: 800px) {
     /*Mobile*/
-    .nav--links, .nav--button {
+    .default {
       display: none;
     }
-    .hamburgerMenu{
+    .mobile{
         display: flex;
     }
   }
