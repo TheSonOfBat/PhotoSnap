@@ -120,7 +120,7 @@ nav{
 
 .mobileNav{
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     font-size: 15px;
@@ -163,7 +163,7 @@ nav{
     .default {
       display: none;
     }
-    .mobile{
+    .mobile, .mobileNav{
         display: flex;
     }
   }
