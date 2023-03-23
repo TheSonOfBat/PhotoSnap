@@ -158,7 +158,7 @@ nav{
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 765px) {
     /*Mobile*/
     .default {
       display: none;
