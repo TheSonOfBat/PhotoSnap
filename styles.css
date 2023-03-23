@@ -157,6 +157,62 @@ nav{
     margin: 20px 0px 20px 0px;
 }
 
+/*Herosection*/
+.herosection{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 750px;
+}
+
+.herosection--LHS{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 110px 0px 110px;
+}
+
+.herosection--LHS>h1{
+    font-size: 50px;
+    letter-spacing: 6.5px;
+    font-weight: 500;
+    line-height: 65px;
+    margin: 0px;
+}
+
+.herosection--LHS>p{
+    font-size: 17px;
+    color: #999999;
+    width: 500px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.herosection--buttonContainer{
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.herosection--buttonContainer:hover>img{
+    transform: translateX(10px);
+}
+
+.herosection--buttonContainer>img{
+    margin-left: 20px;
+    filter: invert(1);
+    transform: translateX(0px);
+    transition: transform 0.3s ease;
+}
+
+.herosection--RHS{
+    width: 100%;
+    background-image: url("images/home/desktop/create-and-share.jpg");
+    background-size: cover;
+}
+
 /*Media Queries*/
 @media only screen and (max-width: 765px) {
     /*Mobile*/
