@@ -7,12 +7,22 @@
     box-sizing: border-box;
 }
 
+html{
+    display: flex;
+    justify-content: center;
+}
+
 html, body{
     width: 100%;
-    height: 100%;
     font-family: Main;
     padding: 0px;
     margin: 0px;
+}
+
+body{
+    min-height: min-content;
+    max-width: 2000px;
+    box-shadow: 0px 0px 10px 3px lightgrey;
 }
 
 a{
@@ -83,6 +93,7 @@ nav{
     justify-content: space-between;
     cursor: pointer;
     position: relative;
+    padding: 10px;
 }
 
 .hamburgerMenu>span{
@@ -97,11 +108,11 @@ nav{
 }
 
 .span1{
-    top: 0px;
+    top: 5px;
 }
 
 .span2{
-    bottom: 0px;
+    bottom: 5px;
 }
 
 .span1Active{
@@ -156,15 +167,16 @@ nav{
     justify-content: center;
     margin: 20px 0px 20px 0px;
 }
-
+/*Main Sections*/
 section{
     display: grid;
-    grid-template-rows: 650px;
+    grid-template-rows: 700px;
     width: 100%;
     color: black;
     background-color: white;
     justify-items: center;
     align-items: center;
+    position: relative;
 }
 
 section:nth-child(1){
@@ -172,29 +184,80 @@ section:nth-child(1){
     color: white;
 }
 
+section:nth-child(1)::after{
+    left: 0px;
+    height: 40%;
+    display: block;
+    content: "";
+    width: 3px;
+    position: absolute;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+
+}
+
+section:nth-child(1)>.content--paragraph{
+    color: #999999;
+}
+
 .sectionLeft{
-    grid-template-columns: clamp(495px, 50vw, 610px) 1fr;
+    grid-template-columns: clamp(495px, 50vw, 650px) 1fr;
+}
+
+.sectionLeft>img{
+    order: 1;
 }
 
 .sectionRight{
-    grid-template-columns: 1fr clamp(495px, 50vw, 610px);
+    grid-template-columns: 1fr clamp(495px, 50vw, 650px);
+}
+
+.sectionRight>img{
+    order: -1;
 }
 
 .text--content{
-    padding: 30px;
+    padding: 40px;
     align-items: center;
     width: max(80%, 387px);
 }
 
 .content--h1{
     margin: 0px;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: clamp(35px, 3.5vw, 45px);
+    line-height: clamp(44px, 4.4vw, 57px);
     letter-spacing: 6px;
 }
 
 .content--paragraph{
     line-height: 25px;
+    font-size: clamp(15px, 1vw, 17px);
+    color:#666666;
+}
+
+.button--content{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.button--content:hover>.inviteArrow{
+    transform: translateX(10px);
+}
+
+.inviteButton{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.inviteArrow{
+    margin-left: 18px;
+    transition: transform 0.3s ease;
+}
+
+.whiteArrow{
+    filter: invert(1);
 }
 
 .image--content{
