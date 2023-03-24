@@ -355,6 +355,38 @@ section:nth-child(1)>.content--paragraph{
     justify-content: space-between;
 }
 
+/*Home Features Section*/
+.home--featureSection{
+    padding: 120px 0px 120px 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.home--feature{
+    width: 350px;
+    text-align: center;
+    margin: 20px;
+}
+
+.home--featureImageContainer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home--featureText>h2{
+    margin: 40px 0px 25px 0px;
+}
+
+.home--featureText>p{
+    color: #666666;
+}
+
 /*Media Queries*/
 
 /*Mobile*/
