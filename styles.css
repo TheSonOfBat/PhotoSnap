@@ -367,7 +367,7 @@ section:nth-child(1)>.content--paragraph{
 .home--feature{
     width: 350px;
     text-align: center;
-    margin: 20px;
+    margin: 40px;
 }
 
 .home--featureImageContainer{
@@ -388,9 +388,59 @@ section:nth-child(1)>.content--paragraph{
 footer{
     width: 100%;
     background-color: black;
-    height: 250px;
+    display: inline-grid;
+    padding: 65px 170px 65px 170px;
+    color: white;
+    grid-template: "a b" "c b";
+    grid-template-columns: min-content min-content;
+    justify-items: center;
 }
 
+.footer--logo{
+    grid-area: a;
+    width: 170px;
+    height: auto;
+}
+
+.footer--links{
+    grid-area: b;
+    margin-left: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer--link{
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer--link:hover{
+    color: #4C4C4C;
+}
+
+.footer--socials{
+    grid-area: c;
+    display: flex;
+    width: 100%;
+    margin-top: 85px;
+    justify-content: space-between;
+}
+
+.footer--socials>img{
+    width: 20px;
+    height: 20px;
+    filter: grayscale(1) brightness(3);
+    transition: filter 0.2s ease;
+    cursor: pointer;
+}
+
+.footer--socials>img:hover{
+    filter: grayscale(0);
+}
 /*Media Queries*/
 
 /*Mobile*/
