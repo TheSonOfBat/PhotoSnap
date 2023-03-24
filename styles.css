@@ -280,7 +280,6 @@ section:nth-child(1)>.content--paragraph{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(1fr, 375px));
-    margin-bottom: 50px;
 }
 
 .card{
@@ -357,13 +356,12 @@ section:nth-child(1)>.content--paragraph{
 
 /*Home Features Section*/
 .home--featureSection{
-    padding: 120px 0px 120px 0px;
+    padding: 150px 0px 150px 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 50px;
 }
 
 .home--feature{
@@ -385,6 +383,12 @@ section:nth-child(1)>.content--paragraph{
 
 .home--featureText>p{
     color: #666666;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    height: 250px;
 }
 
 /*Media Queries*/
