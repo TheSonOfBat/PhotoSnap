@@ -436,7 +436,7 @@ footer{
     justify-content: space-between;
 }
 
-.footer--socials>img{
+.footer--socials>a>img{
     width: 20px;
     height: 20px;
     filter: grayscale(1) brightness(3);
@@ -444,7 +444,7 @@ footer{
     cursor: pointer;
 }
 
-.footer--socials>img:hover{
+.footer--socials>a>img:hover{
     filter: grayscale(0);
 }
 
