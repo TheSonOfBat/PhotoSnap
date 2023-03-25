@@ -436,6 +436,11 @@ footer{
     justify-content: space-between;
 }
 
+.footer--socials>a{
+    width: 20px;
+    height: 20px;
+}
+
 .footer--socials>a>img{
     width: 20px;
     height: 20px;
