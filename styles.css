@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Main;
+    font-family: MainFont;
     src: url(fonts/DMSans-Regular.ttf);
 }
 
@@ -14,7 +14,7 @@ html{
 
 html, body{
     width: 100%;
-    font-family: Main;
+    font-family: MainFont;
     padding: 0px;
     margin: 0px;
 }
