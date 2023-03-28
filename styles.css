@@ -362,6 +362,10 @@ section:nth-child(1)>.content--paragraph{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    max-width: 1400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .home--feature{
@@ -466,6 +470,17 @@ footer{
 .copyright{
     color: #808080;
 }
+
+/*Features*/
+.features--herosection{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.features--herosection>section{
+    grid-template-rows: 500px;
+}
+
 /*Media Queries Biggest-Smallest*/
 
 /*Mobile*/
