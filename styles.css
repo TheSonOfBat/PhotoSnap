@@ -45,7 +45,7 @@ nav{
 .nav--logo{
     height: 16px;
     width: auto;
-    pointer-events: none;
+    cursor: pointer;
 }
 
 .nav--links{
@@ -221,7 +221,6 @@ section:nth-child(1)>.content--paragraph{
     padding: 40px;
     align-items: center;
     width: max(80%, 387px);
-    min-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -481,6 +480,16 @@ footer{
     grid-template-rows: 500px;
 }
 
+.features--banner{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/shared/desktop/bg-beta.jpg);
+}
+
 /*Media Queries Biggest-Smallest*/
 
 /*Mobile*/
@@ -534,6 +543,7 @@ footer{
         padding: 30px;
         width: max(80%, 310px);
         position: relative;
+        min-height: 600px;
     }
     section:nth-child(1)>.text--content::after{
         left: 20%;
