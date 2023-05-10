@@ -529,12 +529,12 @@ footer{
 }
 
 /*Features*/
-.features--herosection{
+.variant--herosection{
     display: flex;
     margin-bottom: 20px;
 }
 
-.features--herosection>section{
+.variant--herosection>section{
     grid-template-rows: 530px;
 }
 
