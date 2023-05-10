@@ -282,7 +282,7 @@ section:nth-child(1)>.content--paragraph{
 }
 
 .card{
-    aspect-ratio: 15/18;
+    aspect-ratio: 15/20;
     background-size: cover;
     color: white;
     position: relative;
