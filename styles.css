@@ -332,6 +332,11 @@ section:nth-child(1)>.content--paragraph{
     opacity: 0.2;
 }
 
+.card--details:nth-child(1){
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
 /*Unique Card Backgrounds*/
 .card--rows >.card--container:nth-child(1) >.card:nth-child(1){
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 20%, rgba(0, 0, 0, 0.75) 80%), url(/images/stories/desktop/mountains.jpg) no-repeat center center / cover;
