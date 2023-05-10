@@ -10,4 +10,3 @@ hamburgerMenu.addEventListener(("click"),()=>{
     span2.classList.toggle("span2Active");
 });
 
-//
