@@ -11,9 +11,15 @@ hamburgerMenu.addEventListener(("click"),()=>{
 });
 
 //Toggle
+let priceChangeObj = {
+    yearlyPrices: [190, 390, 990],
+    montlhyPrices: [19, 39, 99],
+    isMonthly: false
+}
 document.getElementById("toggle").addEventListener("click",()=>{
     document.getElementById("toggle--ball").classList.toggle("ballToggle");
     document.getElementById("toggle").classList.toggle("toggleToggle");
-
     Array.from(document.getElementsByClassName("toggle--span")).forEach((i)=>{i.classList.toggle("spanToggle")});
+    Array.from(document.getElementsByClassName("price")).forEach((item, index)=>{item.innerText = `$${(priceChangeObj.isMonthly)?(priceChangeObj.yearlyPrices[index]):(priceChangeObj.montlhyPrices[index])}.00`}, priceChangeObj.isMonthly = !priceChangeObj.isMonthly);
+    Array.from(document.getElementsByClassName("pricing--period")).forEach((item)=>{item.innerText = (priceChangeObj.isMonthly?"per year":"per month");})
 })
