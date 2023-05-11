@@ -10,3 +10,10 @@ hamburgerMenu.addEventListener(("click"),()=>{
     span2.classList.toggle("span2Active");
 });
 
+//Toggle
+document.getElementById("toggle").addEventListener("click",()=>{
+    document.getElementById("toggle--ball").classList.toggle("ballToggle");
+    document.getElementById("toggle").classList.toggle("toggleToggle");
+
+    Array.from(document.getElementsByClassName("toggle--span")).forEach((i)=>{i.classList.toggle("spanToggle")});
+})

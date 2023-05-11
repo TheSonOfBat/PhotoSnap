@@ -595,6 +595,120 @@ footer{
 #stories--section>.text--content>p{
     margin: 25px 0px 25px 0px;
 }
+
+/*Pricing*/
+.price--compareContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+    flex-direction: column;
+}
+
+.toggle--container{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.toggle{
+    width: 64px;
+    height: 32px;
+    background-color: #DFDFDF;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.toggle, .toggle--ball, .toggle span{
+    transition: 0.2s ease;
+}
+
+.toggleToggle{
+    background-color: black;
+}
+
+.toggle--ball{
+    aspect-ratio: 1/1;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ballToggle{
+    left: calc(100% - 28px);
+    background-color: white;
+}
+
+.spanToggle{
+    color: #808080;
+}
+
+.price--optionsContainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.price--option{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding: 48px 56px 48px 56px;
+    color: black;
+}
+
+.price--option>p:nth-child(1){
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 18px;
+}
+
+.price--option>p:nth-child(2){
+    font-size: 1.1rem;
+    color: #626262;
+}
+
+.price--option>p:nth-child(3){
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.price--option>p:nth-child(4){
+    margin-top: 0px;
+    font-size: 0.9rem;
+    color: #626262;
+    margin-bottom: 40px;
+}
+
+.price--option button{
+    all: unset;
+    width: 270px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.price--option button:hover{
+    color: black;
+    background-color: #DFDFDF;
+}
+
 /*Media Queries Biggest-Smallest*/
 
 /*Mobile*/
