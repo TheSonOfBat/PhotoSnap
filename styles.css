@@ -780,8 +780,9 @@ footer{
     grid-template-columns: 1fr min-content min-content min-content;
     max-width: 830px;
     width: 100%;
-    margin-bottom: 160px;
     align-items: center;
+    margin-bottom: 160px;
+    padding: 0px 40px 0px 40px;
 }
 
 .compare--table div{
@@ -1039,6 +1040,31 @@ footer{
 
     #stories--section{
         background: black;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .compare--table{
+        grid-template: 
+        "a1"
+        "separator1 separator1 separator1 separator1"
+        "a2 b2 c2 d2"
+        "separator2 separator2 separator2 separator2"
+        "a3 b3 c3 d3"
+        "separator3 separator3 separator3 separator3"
+        "a4 b4 c4 d4"
+        "separator4 separator4 separator4 separator4"
+        "a5 b5 c5 d5"
+        "separator5 separator5 separator5 separator5"
+        "a6 b6 c6 d6"
+        "separator6 separator6 separator6 separator6"
+        "a7 b7 c7 d7"
+        "separator7 separator7 separator7 separator7"
+        "a8 b8 c8 d8"
+        "separator8 separator8 separator8 separator8"
+        "a9 b9 c9 d9"
+        "separator9 separator9 separator9 separator9"
+        ;
     }
 }
 
