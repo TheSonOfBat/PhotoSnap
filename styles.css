@@ -893,6 +893,45 @@ footer{
     letter-spacing: 1.7px;
 }
 
+.error-container{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(images/stories/desktop/moon-of-appalacia.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.error--header{
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.error--paragraph{
+    font-size: 1.5rem;
+}
+
+.error-container button{
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    color: rgb(24, 37, 54);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.error-container button>p{
+    margin: 0px;
+    mix-blend-mode: multiply;
+}
+
 /*Media Queries Biggest-Smallest*/
 
 /*Mobile*/
