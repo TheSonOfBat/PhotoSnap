@@ -741,6 +741,120 @@ footer{
     background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 }
 
+.compare--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.compare--header{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    margin-bottom: 60px;
+}
+
+.compare--table{
+    display: grid;
+    grid-template: 
+    "a1 b1 c1 d1"
+    "separator1 separator1 separator1 separator1"
+    "a2 b2 c2 d2"
+    "separator2 separator2 separator2 separator2"
+    "a3 b3 c3 d3"
+    "separator3 separator3 separator3 separator3"
+    "a4 b4 c4 d4"
+    "separator4 separator4 separator4 separator4"
+    "a5 b5 c5 d5"
+    "separator5 separator5 separator5 separator5"
+    "a6 b6 c6 d6"
+    "separator6 separator6 separator6 separator6"
+    "a7 b7 c7 d7"
+    "separator7 separator7 separator7 separator7"
+    "a8 b8 c8 d8"
+    "separator8 separator8 separator8 separator8"
+    "a9 b9 c9 d9"
+    "separator9 separator9 separator9 separator9"
+    ;
+    grid-template-columns: 1fr min-content min-content min-content;
+    max-width: 830px;
+    width: 100%;
+    margin-bottom: 160px;
+    align-items: center;
+}
+
+.compare--table div{
+    padding: 5px 20px 5px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.compare--table img{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 65px 20px 65px;
+}
+
+.hideCheck{
+    opacity: 0;
+}
+
+.compare--table> :nth-child(2),.compare--table> :nth-child(3),.compare--table> :nth-child(4){
+    text-align: center;
+}
+
+.compare--table span{
+    display: block;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #DFDFDF;
+    width: 100%;
+    margin: 12px 0px 12px 0px;
+}
+
+#mainSpan{
+    background-color: rgb(29, 29, 29);
+}
+
+.compare--table> :nth-child(5){
+    grid-area: separator1;
+}
+
+.compare--table> :nth-child(10){
+    grid-area: separator2;
+}
+
+.compare--table> :nth-child(15){
+    grid-area: separator3;
+}
+
+.compare--table> :nth-child(20){
+    grid-area: separator4;
+}
+
+.compare--table> :nth-child(25){
+    grid-area: separator5;
+}
+
+.compare--table> :nth-child(30){
+    grid-area: separator6;
+}
+
+.compare--table> :nth-child(35){
+    grid-area: separator7;
+}
+
+.compare--table> :nth-child(40){
+    grid-area: separator8;
+}
+
+.compare--table> :nth-child(45){
+    grid-area: separator9;
+}
 /*Media Queries Biggest-Smallest*/
 
 /*Mobile*/
