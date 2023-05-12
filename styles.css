@@ -86,14 +86,13 @@ nav{
 
 .hamburgerMenu{
     width: 20px;
-    height: 6px;
+    height: 10px;
     display: none;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
     cursor: pointer;
     position: relative;
-    padding: 10px;
 }
 
 .hamburgerMenu>span{
@@ -105,14 +104,15 @@ nav{
     transform-origin: 50% 50%;
     position: absolute;
     transition: 0.2s ease;
+    
 }
 
 .span1{
-    top: 5px;
+    top: 0px;
 }
 
 .span2{
-    bottom: 5px;
+    bottom: 0px;
 }
 
 .span1Active{
