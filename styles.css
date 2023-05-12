@@ -808,7 +808,7 @@ footer{
     text-align: center;
 }
 
-.compare--table span{
+.compare--table span, .moblieCompare--table span{
     display: block;
     height: 1px;
     border-radius: 1px;
@@ -817,7 +817,7 @@ footer{
     margin: 12px 0px 12px 0px;
 }
 
-#mainSpan{
+#mainSpan, #mobileMainSpan{
     background-color: rgb(29, 29, 29);
 }
 
@@ -856,6 +856,43 @@ footer{
 .compare--table> :nth-child(45){
     grid-area: separator9;
 }
+
+.moblieCompare--table{
+    max-width: 650px;
+    font-weight: bold;
+    width: 100%;
+    display: none;
+    margin-bottom: 160px;
+    padding: 0px 30px 0px 30px;
+}
+
+.compare--types{
+    display: grid;
+    grid-template: "a b c" "d e f";
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #808080;
+}
+
+#mobileMainSpan{
+    margin-top: 23px;
+}
+
+.moblieCompare--table span{
+    margin: 23px 0px 23px 0px;
+}
+
+.compare--row>p, .moblieCompare--table>p{
+    letter-spacing: 2.1px;
+}
+
+.moblieCompare--table>p{
+    font-size: 1.2rem;
+}
+
+.compare--types>p{
+    letter-spacing: 1.7px;
+}
+
 /*Media Queries Biggest-Smallest*/
 
 /*Mobile*/
@@ -1045,26 +1082,11 @@ footer{
 
 @media only screen and (max-width: 750px) {
     .compare--table{
-        grid-template: 
-        "a1"
-        "separator1 separator1 separator1 separator1"
-        "a2 b2 c2 d2"
-        "separator2 separator2 separator2 separator2"
-        "a3 b3 c3 d3"
-        "separator3 separator3 separator3 separator3"
-        "a4 b4 c4 d4"
-        "separator4 separator4 separator4 separator4"
-        "a5 b5 c5 d5"
-        "separator5 separator5 separator5 separator5"
-        "a6 b6 c6 d6"
-        "separator6 separator6 separator6 separator6"
-        "a7 b7 c7 d7"
-        "separator7 separator7 separator7 separator7"
-        "a8 b8 c8 d8"
-        "separator8 separator8 separator8 separator8"
-        "a9 b9 c9 d9"
-        "separator9 separator9 separator9 separator9"
-        ;
+        display: none;
+    }
+
+    .moblieCompare--table{
+        display: block;
     }
 }
 
