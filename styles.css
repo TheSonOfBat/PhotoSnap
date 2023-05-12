@@ -63,7 +63,7 @@ nav{
 }
 
 .nav--link{
-    margin: 37px;
+    margin: 0px 37px 0px 37px;
     cursor: pointer;
 }
 
